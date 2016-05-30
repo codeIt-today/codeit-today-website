@@ -1,0 +1,23 @@
+{
+  "name": "codeit-today-website",
+  "version": "0.0.1",
+  "description": "codeIt.today website",
+  "main": "index.js",
+  "scripts": {
+    "watch": "node-sass  --w sass/ --recursive -o dist/",
+    "build": "node-sass --output-style=compressed sass/main.sass dist/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/codeIt-today/codeIt-today-website.git"
+  },
+  "author": "CodinCat <CodinCat@codeit.today> (https://github.com/CodinCat)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/codeIt-today/codeIt-today-website/issues"
+  },
+  "homepage": "https://github.com/codeIt-today/codeIt-today-website#readme",
+  "devDependencies": {
+    "bulma": "^0.0.27"
+  }
+}

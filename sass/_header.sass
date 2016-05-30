@@ -1,0 +1,37 @@
+.hero
+	border-top: 18px solid #8A6E0F
+	text-align: center
+	text-shadow: $normal-text-shadow
+	min-height: 560px
+	+phone
+		min-height: 760px
+	+tablet
+		min-height: 820px
+
+	.hero-body
+		padding-top: 0
+
+	.title
+		font-size: $hero-title-size * 0.6
+		text-shadow: $title-text-shadow
+		+phone
+			font-size: $hero-title-size * 0.8
+		+tablet
+			font-size: $hero-title-size
+
+	.nav-menu
+		height: 100px
+		padding-right: 20px
+
+	a.nav-item
+		color: rgba(#FFF, .92)!important
+		padding: 14px
+		&:hover
+			color: #FFF!important
+
+	.nav-toggle
+		height: $burger-size
+		width: $burger-size
+		span
+			height: 2px
+			box-shadow: 0 1px 1px rgba(black, .4)
