@@ -3797,7 +3797,7 @@ body, p {
   font-family: "Love Ya Like A Sister"; }
 
 .hero {
-  border-top: 18px solid #8A6E0F;
+  border-top: 14px solid #866B10;
   text-align: center;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
   min-height: 560px; }
@@ -3820,9 +3820,11 @@ body, p {
         font-size: 96px; } }
   .hero .nav-menu {
     height: 100px;
-    padding-right: 20px; }
+    padding-right: 24px; }
   .hero a.nav-item {
     color: rgba(255, 255, 255, 0.92) !important;
+    font-weight: bold;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.56);
     padding: 14px; }
     .hero a.nav-item:hover {
       color: #FFF !important; }
@@ -3834,7 +3836,7 @@ body, p {
       box-shadow: 0 1px 1px rgba(0, 0, 0, 0.4); }
 
 .section {
-  padding: 60px 32px; }
+  padding: 80px 32px 120px; }
   .section .title {
     cursor: default;
     font-size: 38px;
@@ -3862,15 +3864,37 @@ body, p {
     text-shadow: none;
     width: 320px;
     height: 100px;
-    margin: 80px 0 60px;
-    transition: box-shadow ease .6s; }
+    margin-top: 80px;
+    transition: box-shadow ease .42s; }
     .intro-section .intro-section-button:hover {
       box-shadow: 0 12px 62px rgba(0, 0, 0, 0.36); }
+
+.subscription-section .title {
+  font-size: 38px; }
+  @media screen and (min-width: 769px) {
+    .subscription-section .title {
+      font-size: 48px; } }
+
+.subscription-section .input-wrapper {
+  width: 90%;
+  max-width: 760px;
+  margin: 0 auto; }
+  .subscription-section .input-wrapper .item {
+    height: 72px; }
+  .subscription-section .input-wrapper .subscription-email {
+    padding: 8px 0 8px 32px;
+    transition: border-color ease .32s; }
+  .subscription-section .input-wrapper .subscription-button {
+    width: 112px;
+    transition: background ease .16s; }
+    .subscription-section .input-wrapper .subscription-button:hover, .subscription-section .input-wrapper .subscription-button:focus {
+      background: #7db200; }
+    .subscription-section .input-wrapper .subscription-button:active {
+      background: #72a300; }
 
 .footer {
   background: #333;
   color: #FFF; }
   .footer .logo {
     color: #4a4a4a;
-    font-size: 38px;
-    text-align: center; }
+    font-size: 38px; }

@@ -33,7 +33,34 @@
 		text-shadow: none
 		width: 320px
 		height: 100px
-		margin: 80px 0 60px
-		transition: box-shadow ease .6s
+		margin-top: 80px
+		transition: box-shadow ease .42s
 		&:hover
 			box-shadow: 0 12px 62px rgba(black, .36)
+
+
+.subscription-section
+	.title
+		font-size: $size-2
+		+tablet
+			font-size: $size-1
+
+	.input-wrapper
+		width: 90%
+		max-width: 760px
+		margin: 0 auto
+		
+		.item
+			height: 72px
+		
+		.subscription-email
+			padding: 8px 0 8px 32px
+			transition: border-color ease .32s
+
+		.subscription-button
+			width: 112px
+			transition: background ease .16s
+			&:hover, &:focus
+				background: darken($primary, 2%)
+			&:active
+				background: darken($primary, 5%)
