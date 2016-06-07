@@ -12,13 +12,12 @@
 
 
 .intro-section
-	background: $blue
+	background: $gradient-2
 	color: #FFF
 	text-shadow: $normal-text-shadow
 
 	.title
 		color: #FFF
-		text-shadow: $title-text-shadow
 
 	.section-content p
 		font-size: $size-5
@@ -54,13 +53,18 @@
 			height: 72px
 		
 		.subscription-email
+			border-color: $grey-light
 			padding: 8px 0 8px 32px
 			transition: border-color ease .32s
+			&:hover
+				border-color: darken($grey-light, 12%)
+			&:focus
+				border-color: $grey
 
 		.subscription-button
 			width: 112px
 			transition: background ease .16s
 			&:hover, &:focus
-				background: darken($primary, 2%)
+				background: darken($green, 2%)
 			&:active
-				background: darken($primary, 5%)
+				background: darken($green, 5%)
