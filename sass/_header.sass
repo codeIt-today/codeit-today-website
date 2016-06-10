@@ -1,5 +1,4 @@
 .hero
-	background: $gradient-1
 	color: #FFF
 	text-align: center
 	text-shadow: $normal-text-shadow
@@ -9,15 +8,19 @@
 		min-height: 760px
 	+tablet
 		min-height: 820px
-	
-	.nav
-		box-shadow: none
-		height: $nav-height
-		margin: 0 12px
-		+desktop
-			margin: 0 24px
-		+widescreen
-			margin: 0 48px
+	.hero-body
+		padding-top: 0
+
+
+.nav
+	background: none
+	box-shadow: none!important
+	height: $nav-height
+	margin: 0 12px
+	+desktop
+		margin: 0 24px
+	+widescreen
+		margin: 0 48px
 
 	.nav-title
 		flex: 1
@@ -55,5 +58,3 @@
 			background: #FFF
 			height: 2px
 
-	.hero-body
-		padding-top: 0

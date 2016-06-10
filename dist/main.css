@@ -3789,6 +3789,18 @@ a.panel-block:hover {
       .footer a:not(.icon):hover, .footer a:visited:not(.icon):hover {
         border-bottom-color: #77BCCF; }
 
+.gradient-1 {
+  background: linear-gradient(150deg, #4F6EFA, #82FFF5);
+  color: #FFF; }
+
+.gradient-2 {
+  background: linear-gradient(150deg, #FF407A, #4F6EFA);
+  color: #FFF; }
+
+.gradient-3 {
+  background: linear-gradient(150deg, #35c12c, #e6ff82);
+  color: #FFF; }
+
 body, p {
   font-size: 21px;
   line-height: 1.8; }
@@ -3800,7 +3812,6 @@ body, p {
   text-shadow: none; }
 
 .hero {
-  background: linear-gradient(150deg, #4F6EFA, #82FFF5);
   color: #FFF;
   text-align: center;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.24);
@@ -3812,52 +3823,54 @@ body, p {
   @media screen and (min-width: 769px) {
     .hero {
       min-height: 820px; } }
-  .hero .nav {
-    box-shadow: none;
-    height: 100px;
-    margin: 0 12px; }
-    @media screen and (min-width: 980px) {
-      .hero .nav {
-        margin: 0 24px; } }
-    @media screen and (min-width: 1180px) {
-      .hero .nav {
-        margin: 0 48px; } }
-  .hero .nav-title {
+  .hero .hero-body {
+    padding-top: 0; }
+
+.nav {
+  background: none;
+  box-shadow: none !important;
+  height: 100px;
+  margin: 0 12px; }
+  @media screen and (min-width: 980px) {
+    .nav {
+      margin: 0 24px; } }
+  @media screen and (min-width: 1180px) {
+    .nav {
+      margin: 0 48px; } }
+  .nav .nav-title {
     flex: 1; }
     @media screen and (min-width: 769px) {
-      .hero .nav-title {
+      .nav .nav-title {
         flex: 0.5; } }
-  .hero a.title {
+  .nav a.title {
     color: #FFF;
     font-size: 33.44px; }
     @media screen and (min-width: 980px) {
-      .hero a.title {
+      .nav a.title {
         font-size: 38px; } }
   @media screen and (min-width: 1180px) {
-    .hero .nav-menu {
+    .nav .nav-menu {
       padding-right: 12px; } }
-  .hero .nav-menu a.nav-item {
+  .nav .nav-menu a.nav-item {
     color: rgba(255, 255, 255, 0.92) !important;
     font-size: 18px;
     padding: 10px; }
     @media screen and (min-width: 1180px) {
-      .hero .nav-menu a.nav-item {
+      .nav .nav-menu a.nav-item {
         font-size: 21px;
         padding: 14px; } }
-    .hero .nav-menu a.nav-item:hover {
+    .nav .nav-menu a.nav-item:hover {
       color: #FFF !important; }
-  .hero .nav-toggle {
+  .nav .nav-toggle {
     height: 100px;
     width: 100px; }
-    .hero .nav-toggle:hover {
+    .nav .nav-toggle:hover {
       background: none; }
-      .hero .nav-toggle:hover span {
+      .nav .nav-toggle:hover span {
         box-shadow: 0 0 4px rgba(255, 255, 255, 0.46); }
-    .hero .nav-toggle span {
+    .nav .nav-toggle span {
       background: #FFF;
       height: 2px; }
-  .hero .hero-body {
-    padding-top: 0; }
 
 .section {
   padding: 80px 32px 120px; }
@@ -3870,7 +3883,6 @@ body, p {
     padding: 0 24px; }
 
 .intro-section {
-  background: linear-gradient(150deg, #FF407A, #4F6EFA);
   color: #FFF;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.24); }
   .intro-section .title {
@@ -3919,6 +3931,9 @@ body, p {
       background: #7db200; }
     .subscription-section .input-wrapper .subscription-button:active {
       background: #72a300; }
+
+.courses-main {
+  min-height: 100vh; }
 
 .footer {
   background: #333;
