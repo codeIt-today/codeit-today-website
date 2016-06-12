@@ -76,5 +76,35 @@
 // Courses
 // ===================
 
-.courses-main
+.courses-container
 	min-height: 100vh
+
+.courses-main
+	margin-top: 40px
+	padding: 0 10px
+	+widescreen
+		padding: 0 20px
+
+	.tile.course
+		background: rgba(black, .1)
+		border: 1px solid rgba(black, .2)
+		color: #FFF
+		cursor: pointer
+		padding: 18px
+		transition: all ease .2s
+		&:hover
+			background: rgba(black, .12)
+			border-color: rgba(black, .28)
+			box-shadow: 0 0 24px rgba(black, .24)
+
+		.title
+			color: #FFF
+			font-size: $size-4
+		p
+			font-size: $size-7
+
+		+widescreen
+			.title
+				font-size: $size-3
+			p
+				font-size: $size-6

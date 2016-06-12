@@ -3789,6 +3789,9 @@ a.panel-block:hover {
       .footer a:not(.icon):hover, .footer a:visited:not(.icon):hover {
         border-bottom-color: #77BCCF; }
 
+.tile {
+  min-height: min-content; }
+
 .gradient-1 {
   background: linear-gradient(150deg, #4F6EFA, #82FFF5);
   color: #FFF; }
@@ -3798,7 +3801,7 @@ a.panel-block:hover {
   color: #FFF; }
 
 .gradient-3 {
-  background: linear-gradient(150deg, #35c12c, #e6ff82);
+  background: linear-gradient(150deg, #a714c1, #17a5f9);
   color: #FFF; }
 
 body, p {
@@ -3859,7 +3862,7 @@ body, p {
       .nav .nav-menu a.nav-item {
         font-size: 21px;
         padding: 14px; } }
-    .nav .nav-menu a.nav-item:hover {
+    .nav .nav-menu a.nav-item:hover, .nav .nav-menu a.nav-item.is-active {
       color: #FFF !important; }
   .nav .nav-toggle {
     height: 100px;
@@ -3932,8 +3935,36 @@ body, p {
     .subscription-section .input-wrapper .subscription-button:active {
       background: #72a300; }
 
-.courses-main {
+.courses-container {
   min-height: 100vh; }
+
+.courses-main {
+  margin-top: 40px;
+  padding: 0 10px; }
+  @media screen and (min-width: 1180px) {
+    .courses-main {
+      padding: 0 20px; } }
+  .courses-main .tile.course {
+    background: rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    color: #FFF;
+    cursor: pointer;
+    padding: 18px;
+    transition: all ease .2s; }
+    .courses-main .tile.course:hover {
+      background: rgba(0, 0, 0, 0.12);
+      border-color: rgba(0, 0, 0, 0.28);
+      box-shadow: 0 0 24px rgba(0, 0, 0, 0.24); }
+    .courses-main .tile.course .title {
+      color: #FFF;
+      font-size: 28px; }
+    .courses-main .tile.course p {
+      font-size: 18px; }
+    @media screen and (min-width: 1180px) {
+      .courses-main .tile.course .title {
+        font-size: 32px; }
+      .courses-main .tile.course p {
+        font-size: 21px; } }
 
 .footer {
   background: #333;

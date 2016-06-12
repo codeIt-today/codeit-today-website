@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="dist/main.css">
 </head>
 <body>
-<main class="courses-main gradient-3">
+<div class="courses-container gradient-3">
 	<nav class="nav hero-head">
 		<div class="nav-left nav-title">
 			<a href="#" class="nav-item logo title">codeIt.today</a>
@@ -18,13 +18,44 @@
 			<span></span>
 		</div>
 		<div class="nav-right nav-menu">
-			<a href="#" class="nav-item">首頁</a>
-			<a href="/courses.html" class="nav-item">課程目錄</a>
+			<a href="/" class="nav-item">首頁</a>
+			<a href="/courses.html" class="nav-item is-active">課程目錄</a>
 			<a href="#" class="nav-item">學習路線</a>
 			<a href="#" class="nav-item">關於本站</a>
 			<a href="#" class="nav-item">聯絡我們</a>
 		</div>
 	</nav>
-</main>
+	<main class="courses-main container">
+		<div class="tile is-ancestor">
+			<div class="tile is-8 is-vertical">
+				<div class="tile is-parent">
+					<div class="tile is-child course">
+						<h2 class="title">JavaScript ES2015</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum mollitia earum porro iure ipsam esse itaque minus inventore, est tempora laborum, quia, soluta, dicta placeat! Culpa quaerat delectus, nobis pariatur.</p>
+					</div>
+				</div>
+				<div class="tile">
+					<div class="tile is-5 is-parent">
+						<div class="tile is-child course">
+							<h2 class="title">HTML Basics</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus reprehenderit minima distinctio autem nobis consectetur.</p>
+						</div>
+					</div>
+					<div class="tile is-parent">
+						<div class="tile is-child course">
+							<h2 class="title">CSS Basics</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore consectetur, veniam cum optio rerum, iure totam deserunt nemo voluptatibus maiores nam commodi repellat doloremque ratione impedit non. Sit, deserunt necessitatibus!</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="tile is-4 is-parent">
+				<div class="tile is-child course">
+					course 3
+				</div>
+			</div>
+		</div>
+	</main>
+</div>
 </body>
 </html>
