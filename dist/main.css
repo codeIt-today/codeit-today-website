@@ -3855,15 +3855,20 @@ body, p {
     .nav .nav-menu {
       padding-right: 12px; } }
   .nav .nav-menu a.nav-item {
-    color: rgba(255, 255, 255, 0.92) !important;
+    color: rgba(255, 255, 255, 0.88) !important;
     font-size: 18px;
-    padding: 10px; }
+    padding: 10px;
+    transition: all ease .2s; }
     @media screen and (min-width: 1180px) {
       .nav .nav-menu a.nav-item {
         font-size: 21px;
         padding: 14px; } }
     .nav .nav-menu a.nav-item:hover, .nav .nav-menu a.nav-item.is-active {
       color: #FFF !important; }
+    .nav .nav-menu a.nav-item:hover:not(.is-active) {
+      text-shadow: 0 0 16px rgba(255, 255, 255, 0.4); }
+    .nav .nav-menu a.nav-item.is-active {
+      cursor: default; }
   .nav .nav-toggle {
     height: 100px;
     width: 100px; }
@@ -3952,7 +3957,7 @@ body, p {
     padding: 18px;
     transition: all ease .2s; }
     .courses-main .tile.course:hover {
-      background: rgba(0, 0, 0, 0.12);
+      background: rgba(0, 0, 0, 0.14);
       border-color: rgba(0, 0, 0, 0.28);
       box-shadow: 0 0 24px rgba(0, 0, 0, 0.24); }
     .courses-main .tile.course .title {
