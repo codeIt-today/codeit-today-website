@@ -3818,8 +3818,8 @@ body, p {
   color: #FFF;
   text-align: center;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.24);
-  min-height: 560px;
-  height: 96vh; }
+  min-height: 580px;
+  height: 92vh; }
   @media screen and (min-width: 545px) {
     .hero {
       min-height: 760px; } }
@@ -3851,9 +3851,6 @@ body, p {
     @media screen and (min-width: 980px) {
       .nav a.title {
         font-size: 38px; } }
-  @media screen and (min-width: 1180px) {
-    .nav .nav-menu {
-      padding-right: 12px; } }
   .nav .nav-menu a.nav-item {
     color: rgba(255, 255, 255, 0.88) !important;
     font-size: 18px;
@@ -3862,7 +3859,7 @@ body, p {
     @media screen and (min-width: 1180px) {
       .nav .nav-menu a.nav-item {
         font-size: 21px;
-        padding: 14px; } }
+        padding: 16px; } }
     .nav .nav-menu a.nav-item:hover, .nav .nav-menu a.nav-item.is-active {
       color: #FFF !important; }
     .nav .nav-menu a.nav-item:hover:not(.is-active) {
@@ -3975,5 +3972,5 @@ body, p {
   background: #333;
   color: #FFF; }
   .footer .logo {
-    color: #4a4a4a;
-    font-size: 38px; }
+    color: #666;
+    font-size: 32px; }
